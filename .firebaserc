@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "lunacianews-dev": {
+      "hosting": {
+        "pd-free-angularcli": [
+          "lunacianews-dev"
+        ]
+      }
+    }
+  }
+}
