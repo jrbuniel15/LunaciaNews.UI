@@ -13,7 +13,6 @@
  
  The Maven Gaming Guild (Maven GG) aims at uniting people around the common interest of playing and investing in the Metaverse.
 
-
  ## Mission
  We want to help the community to grow by sharing insights and information about the game and its community of players.
  We will provide news and share stories about Axie Infinity, the game and its community
