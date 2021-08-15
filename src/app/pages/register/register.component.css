@@ -1,0 +1,23 @@
+.content {
+    background-color: #f8f4ec;
+}
+
+.wrapper .wrapper-full-page {
+    min-height: 100vh;
+    height: auto;
+}
+
+.wrapper {
+    position: relative;
+    top: 0;
+    height: 100vh;
+}
+
+.full-page {
+    position: initial;
+}
+
+.full-page>.content {
+    padding-top: 25vh;
+    padding-bottom: 31vh;
+}

@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  isEmailFocused: boolean;
+  isPasswordFocused: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

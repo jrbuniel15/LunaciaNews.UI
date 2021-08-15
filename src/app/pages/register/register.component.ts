@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
+  isFirstNameFocused: boolean;
+  isLastNameFocused: boolean;
+  isEmailFocused: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
