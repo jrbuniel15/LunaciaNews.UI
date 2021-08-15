@@ -1,0 +1,57 @@
+<button class="btn btn-outline-primary btn-round" (click)="createClicked()">
+    <i class="fa fa-plus"></i> New
+</button>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title"> Articles</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class=" text-primary">
+                  <th>
+                    Id
+                  </th>
+                  <th>
+                    Title
+                  </th>
+                  <th>
+                    Author
+                  </th>
+                  <th>
+                    Actions
+                  </th>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let article of articles">
+                    <td>
+                        {{article.id}}
+                    </td>
+                    <td>
+                        {{article.title}}
+                    </td>
+                    <td>
+                        {{article.author}}
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-fab btn-icon btn-round mr-2" (click)="deleteClicked(article.id)">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <button class="btn btn-primary btn-fab btn-icon btn-round mr-2">
+                            <i class="fa fa-pencil"></i>
+                        </button>
+                        <button class="btn btn-primary btn-fab btn-icon btn-round">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
