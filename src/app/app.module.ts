@@ -19,6 +19,8 @@ import { ContentManagementCreateComponent } from './pages/content-management/con
 import { ContentManagementReviewComponent } from './pages/content-management/content-management-review/content-management-review.component';
 import { ContentManagementListComponent } from './pages/content-management/content-management-list/content-management-list.component';
 import { ReactiveFormsModule } from "@angular/forms";
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ReactiveFormsModule } from "@angular/forms";
     AdminLayoutComponent,
     ContentManagementCreateComponent,
     ContentManagementReviewComponent,
-    ContentManagementListComponent
+    ContentManagementListComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserAnimationsModule,

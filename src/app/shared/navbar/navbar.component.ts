@@ -33,6 +33,12 @@ export class NavbarComponent implements OnInit{
           this.sidebarClose();
        });
     }
+    loginClicked(): void {
+      this.router.navigate(['/login']);
+    }
+    registerClicked(): void {
+      this.router.navigate(['/register']);
+    }
     getTitle(){
       var titlee = this.location.prepareExternalUrl(this.location.path());
       if(titlee.charAt(0) === '#'){
