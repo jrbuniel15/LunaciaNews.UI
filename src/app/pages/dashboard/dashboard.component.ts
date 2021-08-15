@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
 import Chart from 'chart.js';
 
 
@@ -19,16 +18,7 @@ export class DashboardComponent implements OnInit{
 
   articles = [];
 
-  constructor(private store: AngularFirestore) {
-    this.store.collection('article').add({
-      'title': 'Article #1',
-      'author': 'Jan'
-    });
-
-    let _articles = this.store.collection('article').valueChanges({ idField: 'id' });
-
-    _articles.subscribe(articles => this.articles = articles);
-  }
+  constructor() { }
 
     ngOnInit(){
       this.chartColor = "#FFFFFF";

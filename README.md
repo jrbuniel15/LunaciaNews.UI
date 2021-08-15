@@ -1,5 +1,7 @@
 # LunaciaNews.UI
 
+![image](src\assets\img\lunacia-news.png)
+
  ## Introduction
  Lunacia News is a newsletter website aims to build a strong community to the Axie Infinity Metaverse. By creating this website we aim to centralize the fact contents such videos, guides, economy and informative articles related to the Axie Infinity unity universe and its strong community.
  
