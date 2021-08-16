@@ -1,4 +1,56 @@
 <div class="row">
+    <div class="col-md-4">
+        <div class="card ">
+            <div class="card-header ">
+                <h4 class="card-title">Post Information</h4>
+            </div>
+            <div class="card-body ">
+                <form [formGroup]="sampleForm1" autocomplete="off">
+                    <label>Title</label>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Title" formControlName="title">
+                    </div>
+                        <label>Author</label>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Author" formControlName="author">
+                    </div>
+                    <div class="form-check mt-3">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value=""> Sample Checkbox <span class="form-check-sign"></span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer ">
+                <button class="btn btn-info btn-round" type="submit" (click)="submitSampleForm1Clicked()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <!-- Editory here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Some data we need for post to database for now: 
+    Title,
+    Data and Time,
+    Posting Status (Pending, Published...etc)
+    Article Data (This will contain the extracted content from the editor in HTML format),
+    Post/Article ID,
+    Author (Fields not required)
+    UID
+    Edit History (It will identify if the author made changes once the post/article has been published)
+    Administrator's Comment/Remarks
+    Categories
+-->
+
+<!-- <div class="row">
     <div class="col-md-6">
         <div class="card ">
             <div class="card-header ">
@@ -58,4 +110,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

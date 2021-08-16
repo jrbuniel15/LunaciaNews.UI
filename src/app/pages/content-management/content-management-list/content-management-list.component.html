@@ -1,9 +1,26 @@
-<button class="btn btn-outline-primary btn-round" (click)="createClicked()">
-    <i class="fa fa-plus"></i> New
+<button class="btn btn-outline-primary btn-round btn-lg" (click)="createClicked()">
+    <i class="fa fa-plus"></i> Create
 </button>
-
+<hr>
 <div class="row">
-    <div class="col-md-12">
+  <div class="col-md-4" *ngFor="let article of articles">
+    <div class="card">
+      <div class="card-img-overlay">
+        <h3 class="card-title text-light">{{article.title}}</h3>
+      </div>
+      <img class="card-img-top" src="https://gstatic.com/classroom/themes/img_bookclub.jpg">
+      <div class="card-body">
+        <p id="author_">by {{article.author}}</p>
+        <p id="status_" class="text-success">Published</p>
+      </div>
+      <div class="card-footer text-muted">
+        <div class="float-left">        August 15, 2021        </div>
+        <div class="float-right"><button class="btn btn-primary btn-fab btn-icon btn-round mr-2"><i class="fa fa-pencil fa-lg"></i></button></div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- <div class="col-md-12">
         <div class="card">
           <div class="card-header">
             <h4 class="card-title"> Articles</h4>
@@ -54,4 +71,4 @@
           </div>
         </div>
       </div>
-</div>
+</div> -->
