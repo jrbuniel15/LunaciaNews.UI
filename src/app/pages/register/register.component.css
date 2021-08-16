@@ -21,3 +21,18 @@
     padding-top: 25vh;
     padding-bottom: 31vh;
 }
+
+.btn.btn-facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.btn.btn-dribbble {
+    background-color: #ea4c89;
+    color: #fff;
+}
+
+.btn.btn-twitter {
+    background-color: #55acee;
+    color: #fff;
+}
